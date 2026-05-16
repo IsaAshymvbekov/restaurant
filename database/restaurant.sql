@@ -3,13 +3,7 @@
 -- Database SQL File
 -- Course: CMPE483 - Internet Programming II
 --
--- HOW TO INSTALL:
---   1. Start XAMPP (Apache + MySQL).
---   2. Open http://localhost/phpmyadmin
---   3. Click "Import" and select this file (restaurant.sql).
---   4. Open http://localhost/restaurant/install.php once to create
---      the default admin and demo customer accounts (uses
---      password_hash() so the hashes are valid).
+--
 --
 -- DEFAULT ACCOUNTS (created by install.php):
 --   Admin    -> admin@restaurant.test  / admin123

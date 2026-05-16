@@ -2,57 +2,6 @@
 
 CMPE483 - Internet Programming II - Term Project
 
-A complete web-based restaurant application built with HTML, CSS, JavaScript,
-PHP, and MySQL.  Customers can sign up, sign in, browse the menu, reserve a
-table, and place an order. Admins can manage menu items, categories,
-reservations, orders, and users.
-
----
-
-## Stack
-
-| Layer        | Technology                            |
-| ------------ | ------------------------------------- |
-| Structure    | HTML5                                 |
-| Styling      | CSS3 (custom, no framework)           |
-| Interactivity| JavaScript (vanilla, form validation) |
-| Server       | PHP 7.4+ / 8.x (mysqli)               |
-| Database     | MySQL via XAMPP / phpMyAdmin          |
-
----
-
-## Installation (XAMPP)
-
-1. **Install XAMPP** from <https://www.apachefriends.org/>.
-2. Copy this `restaurant` folder into XAMPP's `htdocs`:
-   ```
-   C:\xampp\htdocs\restaurant
-   ```
-3. Start **Apache** and **MySQL** from the XAMPP Control Panel.
-4. Open <http://localhost/phpmyadmin>, click **Import**, and import
-   `database/restaurant.sql`. This creates the `restaurant_db` database,
-   all tables, and seed data (categories + menu items).
-5. Open <http://localhost/restaurant/install.php> **once**. This script
-   creates the default admin and demo customer accounts using
-   `password_hash()` so the bcrypt hashes are valid.
-6. Visit <http://localhost/restaurant/> to use the site.
-
-> If your MySQL has a different username or password, change the
-> credentials in `config/db.php`.
-
----
-
-## Default accounts
-
-| Role      | Email                     | Password   |
-| --------- | ------------------------- | ---------- |
-| Admin     | admin@restaurant.test     | admin123   |
-| Customer  | user@restaurant.test      | user1234   |
-
-You can also register a new account from `signup.php`.
-
----
-
 ## Project Structure
 
 ```
@@ -112,7 +61,7 @@ restaurant/
 
 ---
 
-## Notes for graders
+## Notes for grader :3
 
 - Passwords are stored as bcrypt hashes (`password_hash` / `password_verify`).
 - All SQL is executed through `mysqli` prepared statements with parameter
